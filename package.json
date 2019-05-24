@@ -12,6 +12,7 @@
   "author": "ssube",
   "license": "MIT",
   "peerDependencies": {
+    "isolex": "^0.7.0",
     "noicejs": "^2.5.2"
   }
 }

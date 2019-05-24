@@ -2,7 +2,3 @@
 # yarn lockfile v1
 
 
-noicejs@^2.5.2:
-  version "2.5.2"
-  resolved "https://registry.yarnpkg.com/noicejs/-/noicejs-2.5.2.tgz#71d5ef524a2ac1e4d998474017a0e8a7c862e0c7"
-  integrity sha512-unGgqcZLcFMPEB+dVsD55RxNa0tl+dMioKMHxZqtYeXx57tlHZsxXNdvzsctTduHQ255nsW8zMONIqE3seYpFw==
