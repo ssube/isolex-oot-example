@@ -1,4 +1,4 @@
-const { Module } = require('noicejs');
+const { Module } = isolex;
 
 const { ExampleService } = require('./example-svc');
 

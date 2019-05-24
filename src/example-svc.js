@@ -1,11 +1,10 @@
-const { BotService } = require('isolex');
+const { BotService, Inject, INJECT_LOGGER } = isolex;
 
 class ExampleService extends BotService {
   constructor(options) {
-    super(options);
+    super(options, 'isolex#/definitions/external-service-data');
 
-    this.logger = options.logger;
-    this.logger.debug(options, 'created example service');
+    this.logger.debug('created example service');
   }
 
   async start() {
@@ -20,6 +19,8 @@ class ExampleService extends BotService {
     this.logger.debug('stopped example service');
   }
 }
+
+Inject(INJECT_LOGGER)(ExampleService);
 
 module.exports = {
   ExampleService,
