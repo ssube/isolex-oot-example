@@ -21,6 +21,26 @@ To provide a schema, the module should fetch it from the DI container with `cont
 `addSchema` with a partial schema (which can reference the existing `isolex` schema). Schemas are currently global and
 top-level names can conflict, but should be made module-specific.
 
+## How is this service installed?
+
+During development, the best way to install an out-of-tree service is with `yarn link`. The service repo must have
+a valid `package.json` for this to work.
+
+In the service repo, run `yarn link`. It will print a message with the package name, like:
+
+```
+yarn link v1.13.0
+success Registered "isolex-oot-example".
+info You can now run `yarn link "isolex-oot-example"` in the projects where you want to use this package and it will be used instead.
+```
+
+In the isolex repo, run `yarn link "isolex-oot-example"` to install your module and service.
+
+For production, the service module should be published to a registry and installed with
+`yarn add isolex-oot-example@x.y.z`.
+
+When creating a docker image, either method can be used, with the module `COPY`'d into the image before being linked.
+
 ## How is this service configured?
 
 This service does not implement any real functionality, but does implement the basic methods to be registered as a
