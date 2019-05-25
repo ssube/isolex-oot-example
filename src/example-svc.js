@@ -2,7 +2,7 @@ const { BotService, Inject, INJECT_LOGGER } = isolex;
 
 class ExampleService extends BotService {
   constructor(options) {
-    super(options, 'isolex#/definitions/external-service-data');
+    super(options, 'example#/definitions/example-service');
 
     this.logger.debug('created example service');
   }
