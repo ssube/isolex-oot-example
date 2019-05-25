@@ -1,11 +1,18 @@
-const { INJECT_SCHEMA, Module } = isolex;
+const {
+  base: {
+    BaseModule,
+  },
+  inject: {
+    INJECT_SCHEMA,
+  },
+} = isolex;
 
 const { ExampleService } = require('./example-svc');
 
 /**
  * This is an example DI module, responsible for binding service classes.
  */
-class ExampleModule extends Module {
+class ExampleModule extends BaseModule {
   async configure(options) {
     await super.configure(options);
 

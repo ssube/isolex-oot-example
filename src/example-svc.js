@@ -1,4 +1,14 @@
-const { BotService, Inject, INJECT_LOGGER } = isolex;
+const {
+  base: {
+    BotService,
+  },
+  inject: {
+    INJECT_LOGGER,
+  },
+  noicejs: {
+    Inject,
+  },
+} = isolex;
 
 class ExampleService extends BotService {
   constructor(options) {
