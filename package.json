@@ -1,6 +1,6 @@
 {
   "name": "isolex-oot-example",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "isolex bot out-of-tree example service",
   "main": "src/index.js",
   "directories": {
