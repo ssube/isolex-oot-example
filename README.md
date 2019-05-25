@@ -8,8 +8,8 @@ Services are classes instantiated and managed by the bot, passed configuration a
 live in the same repository (git tree) as the app's `main` function.
 
 With https://github.com/ssube/isolex/pull/305, the bot is able to `require` JS modules and load services from outside
-of the original source. This allows developers to build modules without recompiling the entire bot and third-parties to
-release their own modules without forking the bot.
+of the original source. This allows service developers to test services without recompiling the entire bot and publish
+service images based on the bot image (using docker's `FROM`).
 
 ## How do out-of-tree schemas work?
 

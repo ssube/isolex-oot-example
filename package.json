@@ -2,6 +2,7 @@
   "name": "isolex-oot-example",
   "version": "0.9.1",
   "description": "isolex bot out-of-tree example service",
+  "keywords": ["isolex", "example", "plugin"],
   "main": "src/index.js",
   "directories": {
     "test": "test"
